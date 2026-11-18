@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    background-color: blue;
+    color: white;
+}

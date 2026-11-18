@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero-section .hero-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.hero-section .hero-wrapper .leftt-side .hero-text h2{
+    font-size: 54px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: rgb(37, 37, 110);
+    margin-top: 157px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+.hero-section .hero-wrapper .left-side .hero-text p{
+    padding-left: 25px;
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    padding-right: 20px;
+}
+.hero-section .hero-wrapper .left-side .hero-btns .btn1{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #0A1A2D 0%, #162A45 50%, #2A5EE8 100%);
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.hero-section .hero-wrapper .left-side .hero-btns .btn2{
+    background: transparent;
+    border: 2px solid #2A5EE8; 
+    color: #2A5EE8;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+.hero-section .hero-wrapper .left-side .hero-btns{
+    margin-left: 20px;
+}
+.hero-section .hero-wrapper .offices{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
+}
+.hero-section .hero-wrapper .right-sde .offices a{
+    text-decoration: none;
+    color: black;
+}
+.hero-section .hero-wrapper .right-sde .hero-img{
+    width: 100%;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+}
+@media(max-width:1080px){
+    .hero-section .hero-wrapper{
+        flex-direction: column;
+    }
+}
+
+
+/* div{
+    display: flex;
+}
+p{
+    color: black;
+    font-size: 30px;
+}
+@media(max-width:1800px){
+    p{color: gold}
+}
+@media(max-width:1600px){
+    p{color: green;}
+}
+@media(max-width:1200px){
+    p{
+        color: blue;
+    }
+}
+@media(max-width:7
+00px){
+    p{
+        color: brown;
+    }
+} */
+

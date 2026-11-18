@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.feedback .feedback-top-content{
+    text-align: center;
+    margin: 50px;
+}
+.feedback .feedback-top-content h2{
+    color: rgb(1, 129, 46);
+}
+.feedback .ceos-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.feedback .ceos-wrapper .ceo-card{
+    text-align: center;
+    width: 250px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(1, 129, 46);
+}
+
+.feedback .ceos-wrapper .ceo-card h3{
+    color: white;
+    margin-top: 10px;
+}
+.feedback .ceos-wrapper .ceo-card h4{
+    color: white;
+    margin-top: 10px;
+}
+.feedback .ceos-wrapper .ceo-card p{
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.feedback .ceos-wrapper .ceo-card .img-wrap{
+    background-color: white;
+    border-radius: 200px;
+    overflow: hidden;
+    height: 140px;
+    width: 140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback .ceos-wrapper .ceo-card .img-wrap img{
+    width: 142px;
+}

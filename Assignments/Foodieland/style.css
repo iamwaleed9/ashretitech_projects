@@ -1,0 +1,817 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+}
+:root{
+    --fontColorPrimary: #000000;
+    --fontColorSec: #88858599;
+    --fontColorTer: #FFFFFF;
+    --bgColor: #E7FAFE;
+}
+/* Header section started */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 80px;
+    border-bottom: 1px solid var(--fontColorSec);
+}
+
+.header-wrapper .menu-links nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+.header-wrapper .menu-links nav ul li a{
+    text-decoration: none;
+    color: var(--fontColorPrimary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+.header-wrapper .menu-links nav ul li a:hover{
+    color: rgb(176, 6, 6);
+}
+
+.header-wrapper .sm-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.header-wrapper .sm-icons img{
+    width: 12px;
+    height: 15px;
+}
+/* Header section ended */
+
+/* Hero section started */
+.container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.hero-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgColor);
+    margin-top: 40px;
+    border-radius: 46px;
+}
+.hero-wrapper .left-side .hot-recipe-btn{
+    display: flex;
+    margin: 30px 40px;
+    gap: 10px;
+    background-color: white;
+    width: 156px;
+    height: 45px;
+    border-radius: 30px;
+}
+.hero-wrapper .left-side .hot-recipe-btn img{
+    padding: 11px 0px 10px 20px;
+    width: 40px;
+    height: 40px;
+    gap: 13px;
+}
+.hero-wrapper .left-side .hot-recipe-btn a{
+    text-decoration: none;
+    color: var(--fontColorPrimary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    padding: 15px 0px 13px 0px;
+}
+.hero-wrapper .left-side .hot-recipe-btn a:hover{
+    color: var(--fontColorTer);
+}
+.hero-wrapper .left-side .hot-recipe-btn:hover{
+    background-color: var(--fontColorPrimary);
+}
+.hero-wrapper .left-side h1{
+    padding: 32px 50px 0px 50px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 119%;
+    letter-spacing: 1%;
+}
+.hero-wrapper .left-side p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #00000099;
+    padding: 24px 50px 0px 50px;
+}
+.hero-wrapper .left-side .time-chicken-btns{
+    position: relative;
+    padding: 30px 0px 0px 50px;
+}
+
+.hero-wrapper .left-side .time-chicken-btns a{
+    width: 139px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0000000D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-decoration: none;
+    color: #00000099;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 0px 13px 25px;
+}
+.hero-wrapper .left-side .time-chicken-btns .time::before{
+    content: "";
+    background-image: url(images/Timer.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 65px;
+    
+}
+.hero-wrapper .left-side .time-chicken-btns .chicken{
+    margin-left: 20px;
+}
+.hero-wrapper .left-side .time-chicken-btns .chicken::before{
+    content: "";
+    background-image: url(images/ForkKnife.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 236px;
+}
+.hero-wrapper .left-side .time-chicken-btns a:hover{
+    color: var(--fontColorPrimary);
+    cursor: pointer;
+}
+.hero-wrapper .left-side .bottom-btns{
+    display: flex;
+    margin: 104px 0 55px 50px;
+}
+.hero-wrapper .left-side .bottom-btns h4{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: var(--fontColorPrimary);
+    margin: -50px 0px 0px 65px;
+}
+.hero-wrapper .left-side .bottom-btns p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #00000099;
+    margin: -14px 110px 6px 13px;
+}
+.hero-wrapper .left-side .bottom-btns button{
+    border:none;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+.hero-wrapper .left-side .bottom-btns button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.hero-wrapper .left-side .bottom-btns button{
+    position: relative;
+}
+.hero-wrapper .left-side .bottom-btns button::before{
+    content: "";
+    background-image: url(images/PlayCircle.svg);
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 154px;
+}
+.hero-wrapper .right-side{
+    position: relative;
+}
+.hero-wrapper .right-side .badge{
+    position: absolute;
+    top: 67px;
+    left: -68px;
+}
+/* Hero section ended */
+
+/* Categories section started */
+.categories .container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.categories .title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 162px;
+}
+.categories .title h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -4%;
+}
+.categories .title button{
+    background-color: #E7FAFE;
+    color: var(--fontColorPrimary);
+    border-radius: 16px;
+    border: none;
+    padding: 20px 35px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+.categories .title button:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+.categories .cat-wrapper{
+    margin-top: 130px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+.categories .cat-wrapper .card .bg{
+    position: relative;
+}
+.categories .cat-wrapper .card .bg .rect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.categories .cat-wrapper .card .bg .hood{
+    position: relative;
+    top: -49px;
+    left: 38px;
+    z-index: 2;
+}
+.categories .cat-wrapper .card .bg h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    margin-left: 48px;
+}
+.categories .cat-wrapper .card:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+/* Categories section ended */
+
+/* Recipe section started */
+
+.recipe .top-content{
+    text-align: center;
+    margin-top: 183px;
+}
+.recipe .top-content h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    color: var(--fontColorPrimary);
+    margin-bottom: 24px;
+}
+.recipe .top-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0px 419px;
+    color: #00000099;
+}
+.recipe .card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 96px;
+    flex-wrap: wrap ;
+    align-items: center;
+    gap: 40px;
+}
+.recipe .card-wrapper .card{
+    width: 400px;
+    height: 434px;
+    background: linear-gradient(35deg,rgba(231, 249, 253, 1) 0%, rgba(231, 249, 253, 1) 0%);;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.recipe .card-wrapper .card:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+.recipe .card-wrapper .card img{
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.recipe .card-wrapper .card h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -4%;
+    margin: 51px 8px 0px 26px;
+}
+.recipe .card-wrapper .card p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #00000099;
+}
+.recipe .card-wrapper .card .time{
+    display: flex;
+    gap: 24px;
+    margin: 24px 8px 0 58px ;
+    gap: 58px;
+}
+.recipe .card-wrapper .card .time .min::before{
+    content: "";
+    background-image: url(images/Timer.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: -11px;
+}
+.recipe .card-wrapper .card .time .healthy::before{
+    content: "";
+    background-image: url(images/ForkKnife.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: -11px;
+}
+/* Recipe section ended */
+
+/* learn More section Started */
+.container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.learn{
+    margin-top: 143px;
+} 
+.learn .container .learn-wrapper{
+    display: flex;
+}
+.learn .container .learn-wrapper .elft-side{
+    width: 50%;
+}
+.learn .container .learn-wrapper .left-side h2{
+    margin-top: 312px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    padding: 0px 10px 0px 10px;
+    line-height: 60px;
+}
+.learn .container .learn-wrapper .left-side p{
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    padding-right: 209px;
+    color: #00000099;
+}
+.learn .container .learn-wrapper .left-side a{
+    text-decoration: none;
+    background-color: #000000;
+    width: 180px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 21px 20px;
+    margin-top: 72px;
+}  
+.learn .container .learn-wrapper .left-side a:hover{
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+}
+.learn .container .learn-wrapper .right-side{
+    width: 50%;
+    position: relative;
+    
+}
+.learn .container .learn-wrapper .right-side .bg{
+    margin-top: 240px;
+    position: absolute;
+    top: -36px;
+    left: 0;
+    z-index: 1;
+}
+.learn .container .learn-wrapper .right-side .chef{
+    position: relative;
+    top: 107px;
+    left: -71px;
+    z-index: 3;
+}
+.learn .container .learn-wrapper .right-side .tomato{
+    position: relative;
+    top: -142px;
+    left: -19px;
+    z-index: 5;
+}
+.learn .container .learn-wrapper .right-side .meat{
+    position: relative;
+    top: -393px;
+    left: -18px;
+    z-index: 6;
+}
+.learn .container .learn-wrapper .right-side .onion{
+    position: relative;
+    top: -393px;
+    left: 274px;
+    z-index: 7;
+}
+.learn .container .learn-wrapper .right-side .culie{
+    position: relative;
+    top: -266px;
+    left: 311px;
+    z-index: 8;
+}
+/* Learn more section completed */
+
+/* instagram section started */
+.instagram{
+    width: 100%;
+    background-image: url(images/Rectangle\ 13.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 160px;
+}
+.instagram .container {
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.instagram .container .top-content{
+    text-align: center;
+    margin-top: 80px;
+}
+.instagram .container .top-content h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    color: var(--fontColorPrimary);
+}
+.instagram .container .top-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #00000099;
+    margin-top: 24px;
+}
+.instagram .container .card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+.instagram .container .card-wrapper .card:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+.instagram .container a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin: 81px 0px 80px 620px;
+    display: inline-block;
+    align-items: center;
+    padding: 21px 71px 22px 32px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    position: relative;
+}
+.instagram .container a::after{
+    content: "";
+    background-image: url(images/004-instagram.png);
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    left: 156px;
+}
+.instagram .container a:hover{
+    border: #000000;
+    cursor: pointer;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+/* instagram section closed */
+
+/* delicious recipe section started */
+.dec-recipe{
+    margin-top: 160px;
+}
+.dec-recipe .container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.dec-recipe .container .title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dec-recipe .container .title-wrapper .left{
+    width: 50%;
+}
+.dec-recipe .container .title-wrapper .left h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    padding-right: 78px;
+}
+.dec-recipe .container .title-wrapper .right{
+    width: 50%;
+}
+.dec-recipe .container .title-wrapper .right p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #00000099;
+    margin-top: 14px;
+}
+.dec-recipe .container .recipe-card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.dec-recipe .recipe-card-wrapper .card{
+    width: 312px;
+    height: 395px;
+    background: white;
+}
+.dec-recipe .recipe-card-wrapper .card img{
+    border-radius: 30px;
+}
+.dec-recipe .recipe-card-wrapper .card:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(35deg,rgba(231, 249, 253, 1) 0%, rgba(231, 249, 253, 1) 0%);
+
+}
+.dec-recipe .recipe-card-wrapper .card img{
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.dec-recipe .recipe-card-wrapper .card h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -4%;
+    margin: 7px 8px 0px 29px;
+}
+.dec-recipe .recipe-card-wrapper .card p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #00000099;
+}
+.dec-recipe .recipe-card-wrapper .card .time{
+    display: flex;
+    gap: 24px;
+    margin: 24px 8px 0 58px ;
+    gap: 58px;
+}
+.dec-recipe .recipe-card-wrapper .card .time .min::before{
+    content: "";
+    background-image: url(images/Timer.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: -11px;
+}
+.dec-recipe .recipe-card-wrapper .card .time .healthy::before{
+    content: "";
+    background-image: url(images/ForkKnife.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: -11px;
+}
+
+/* inbox section started */
+.inbox{
+    margin-top: 160px ;
+}
+.inbox .container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.inbox .container .wrapper{
+    background-image: url(images/Rectangle\ 15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    border-radius: 60px;
+    width: 100%;
+    height: 442px;
+}
+.inbox .container .wrapper h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    padding-top: 80px;
+    
+}
+.inbox .container .wrapper p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 24px;
+    color: #00000099;
+    text-align: center;
+    padding: 0px 380px;
+}
+.inbox .container .sub-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.inbox .container .sub-form input{
+    height: 80px;
+    width: 480px;
+    border-radius: 24px;
+    border: none;
+    background-color: #FFFFFF;
+}
+.inbox .container .sub-form input::placeholder{
+    color: #00000066;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    padding-left: 50px;
+}
+.inbox .container .sub-form{
+    position: relative;
+}
+.inbox .container .sub-form button{
+    display: inline-block;
+    padding: 23px 57px;
+    background-color: #000000;
+    color: white;
+    border-radius: 16px;
+    position: absolute;
+    top: 7px;
+    left: 54%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+.inbox .container{
+    position: relative;
+    overflow: hidden;
+}
+.inbox .container .salad{
+    position: absolute;
+    top: 101px;
+    left: 0px;
+}
+.inbox .container .picture{
+    position: absolute;
+    top: 228px;
+    left: 74%;
+}
+/* Inbox section ended */
+
+/* Footer section started */
+.footer{
+    margin-top: 160px;
+}
+.footer .container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer .container .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container .footer-wrapper .nav-links nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style-type: none ;
+}
+.footer .container .footer-wrapper .nav-links nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #000000;
+}
+.footer .container .footer-wrapper .nav-links nav ul li a:hover{
+    color: red;
+}
+.footer .container .footer-wrapper .logo p{
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;   
+}
+.footer .container .bottom-side hr{
+    margin-top: 75px;
+    color: #0000001A;
+}
+.footer .container .bottom-side p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #00000099;
+    text-align: center;
+    margin: 48px;
+}
+.footer .container .bottom-side span{
+    color: red;
+}
+.footer .container .bottom-side{
+    position: relative;
+}
+.footer .container .bottom-side .social img{
+    position: absolute;
+    top: 47px;
+    right: 0;
+}
+/* Footer section ended */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

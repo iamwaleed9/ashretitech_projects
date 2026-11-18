@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    padding: 20px;
+    margin: 20px;
+    height: 500px;
+    width: 900px;
+    position: relative;
+    background-color: blanchedalmond;
+
+}
+.wrapper .box{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    padding: 30px;
+    background-color: aqua;
+    border: 2px solid;
+}
+.wrapper .box .p{
+    font: 60px;
+}
+.wrapper .box1{
+    background-color: rgb(7, 63, 149);
+    top: 50px;
+    left: 50px;
+    z-index: 4;
+}
+.wrapper .box2{
+    background-color: rgb(147, 226, 43);
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}    
+.wrapper .box3{
+    background-color: blueviolet;
+    top: 150px;
+    left: 150px;
+    z-index: 2;
+}

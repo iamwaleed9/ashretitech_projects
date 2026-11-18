@@ -1,0 +1,272 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #252a34;
+    line-height: 1.6;
+}
+
+
+.header {
+    background-color: #172554;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.header h2 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.header > p {
+    max-width: 760px;
+    margin: 0 auto 20px;
+}
+
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+}
+
+.header a {
+    color: #dbeafe;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+
+.resume-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sidebar contains skills, education, and certificates */
+.sidebar {
+    width: 34%;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e1e5ec;
+}
+
+/* Main content contains summary, experience, and projects */
+.main-content {
+    width: 66%;
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 8px;
+    border: 1px solid #e1e5ec;
+}
+
+
+.section {
+    margin-bottom: 28px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section h2 {
+    color: #172554;
+    font-size: 21px;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dbeafe;
+}
+
+
+.section ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 7px;
+}
+
+/* Add spacing between education, experience, and project entries */
+.education-item,
+.experience-item,
+.project-item {
+    margin-bottom: 22px;
+}
+
+.education-item:last-child,
+.experience-item:last-child,
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-item h3,
+.experience-item h3,
+.project-item h3 {
+    color: #252a34;
+    font-size: 17px;
+    margin: 0 0 4px;
+}
+
+.education-item p,
+.experience-item p,
+.project-item p {
+    margin: 4px 0;
+}
+
+/* Use smaller text for dates and extra notes */
+.small-text {
+    color: #697386;
+    font-size: 13px;
+}
+
+.company {
+    color: #475569;
+    font-weight: bold;
+}
+
+/* Style links inside the main resume content */
+.main-content a,
+.sidebar a {
+    color: #1d4ed8;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.main-content a:hover,
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Style the bottom footer */
+.footer {
+    background-color: #172554;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 20px;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tablet and smaller screens: stack the sidebar and main content */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        margin: 20px auto;
+        gap: 18px;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header h2 {
+        font-size: 16px;
+    }
+}
+
+/* Mobile screens: reduce padding and text sizes */
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 16px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .header h2 {
+        font-size: 15px;
+    }
+
+    .contact-info p {
+        display: block;
+        margin: 8px 0;
+        overflow-wrap: anywhere;
+    }
+
+    .resume-container {
+        padding: 0 12px;
+    }
+
+    .sidebar,
+    .main-content {
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 19px;
+    }
+}
+
+/* Print-friendly layout when saving the resume as a PDF
+@media print {
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .header,
+    .footer {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .header a,
+    .main-content a,
+    .sidebar a {
+        color: #000000;
+    }
+
+    .resume-container {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+        border: none;
+        padding: 12px 0;
+    }
+
+    .section {
+        break-inside: avoid;
+    }
+} */

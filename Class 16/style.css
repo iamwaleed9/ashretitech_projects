@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1920px;
+    width: 95%;
+    margin: 0 auto;
+}
+.header-wrapper{
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    color: white;
+}
+.header-wrapper .logo-img img{
+    width: 334px;
+    padding: 22px 25px;
+    margin-left: 20px;
+}
+.header-wrapper .menu-links nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 40px;
+    margin-right: 60px;
+}
+.header-wrapper .menu-links nav ul li{
+    list-style-type: none;
+}
+.header-wrapper .menu-links nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.header-wrapper .menu-links nav ul .investor a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-weight: 500;
+}
+/* Header Section styling ended */
+
+/* Hero Section styling started */
+.hero-section .hero-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.hero-section .hero-wrapper .hero-text h2{
+    font-size: 54px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: blue;
+    margin-top: 157px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+.hero-section .hero-wrapper .hero-text p{
+    padding-left: 25px;
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    padding-right: 20px;
+}
+.hero-section .hero-wrapper .hero-btns .btn1{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: blue;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.hero-section .hero-wrapper .hero-btns .btn2{
+    background: transparent;
+    border: 2px solid blue; 
+    color: blue;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+.hero-section .hero-wrapper .hero-btns{
+    margin-left: 20px;
+}
+.hero-section .hero-wrapper .offices{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
+}
+.hero-section .hero-wrapper .offices a{
+    text-decoration: none;
+    color: black;
+}
+.hero-section .hero-wrapper .hero-img{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+}
+.content > p{
+    color: blueviolet;
+}
