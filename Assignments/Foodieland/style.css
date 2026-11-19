@@ -792,6 +792,43 @@
 /* Footer section ended */
 
 
+/* <=============CONTACT US PAGE STARTED ==============>*/
+.form .container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.form{
+    margin-top: 40px;
+}
+.form .container .top-contact h2{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    text-align: center;
+    margin-top: 84px;
+}
+.form .container .wrapper{
+    display: flex;
+    position: relative;
+    margin-top: 72px;
+    gap: 60px;
+}
+.form .container .wrapper .rect{
+    width: 400px;
+    height: 432px;
+    overflow: hidden;
+}
+.form .container .wrapper .person{
+    position: absolute;
+    top: -41px;
+    left: 34px;
+    z-index: 2;
+}
+
+
+
 
 
 

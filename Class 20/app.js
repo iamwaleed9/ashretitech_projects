@@ -110,41 +110,41 @@
 // }
 
 
-let marks = Number(prompt("Enter your marks"));
+// let marks = Number(prompt("Enter your marks"));
 
-if (marks > 100 || marks < 0) {
-    console.log("Invalid number")
-}
-else 
-    {
-    if (marks >= 90) {
-        console.log("A+")
-    }
-    else if (marks >= 85) {
-        console.log("A");
-    }
-    else if (marks >= 75) {
-        console.log(B)
-    }
-    else if (marks >= 60) {
-        console.log("C Grade")
-    }
-    else if (marks >= 45) {
-        console.log("D Grade")
-    }
-    else if (marks >= 33) {
-        console.log("E Grade")
-    }
-    else if (marks <= 32) {
-        console.log("F Grade")
-    }
-    else {
-        console.log("Fail ");
-    }
-}
+// if (marks > 100 || marks < 0) {
+//     console.log("Invalid number")
+// }
+// else 
+//     {
+//     if (marks >= 90) {
+//         console.log("A+")
+//     }
+//     else if (marks >= 85) {
+//         console.log("A");
+//     }
+//     else if (marks >= 75) {
+//         console.log(B)
+//     }
+//     else if (marks >= 60) {
+//         console.log("C Grade")
+//     }
+//     else if (marks >= 45) {
+//         console.log("D Grade")
+//     }
+//     else if (marks >= 33) {
+//         console.log("E Grade")
+//     }
+//     else if (marks <= 32) {
+//         console.log("F Grade")
+//     }
+//     else {
+//         console.log("Fail ");
+//     }
+// }
 
 // let num1 = +prompt("Enter your first number");
-// let sign = prompt("Enter operator");
+// let sign = prompt("Enter operator (+,-,*,/,%");
 // let num2 = +prompt("Enter your second numebr");
 
 // if(sign == "+"){
@@ -165,3 +165,51 @@ else
 // else{
 //     console.log("Please write valid values")
 // }
+
+
+// let balance = 10000;
+// let pin = "1122";
+// let enteredPin = +prompt("Enter your Secret Pin");
+
+// if(enteredPin == pin){
+//     let amount = +prompt("Enter your Amount")
+//     if(amount > balance){
+//         console.log("Insufficient balance")
+//     }
+//     else if(amount < 500){
+//         console.log("You can with draw minmum Rs. 500")
+//     }else{
+//         balance = balance - amount;
+//         console.log(`your balance ${balance}`)
+//         console.log(`Withdrawal Amount: ${amount}`);
+//     }
+// }else{
+//     alert("Incorrect Pin")
+// }
+
+// let balance = 10000;
+// let pin = "5130";
+// let pass = Number(prompt("Enter Your Atm Pin "))
+
+// if (pass == pin) {
+//     let amount = +prompt("Enter your amount");
+//     if (amount > balance) {
+//         console.log("Insuffiecient Balance")
+//     }
+//     else if (balance = balance - amount) {
+//         console.log(`Balance: ${balance}`)
+//         console.log(`withdrawn: ${amount}`)
+//     }
+// }
+// else {
+//     console.log("incorrct pin")
+// }
+
+
+
+let grocery = ["Chicken " , "Banana " , "Biryani"];
+
+// grocery.push("salt");
+grocery.pop()
+
+console.log(grocery);
