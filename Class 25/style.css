@@ -1,0 +1,12 @@
+/* .imp-para{
+    background-color: blue;
+} */
+
+
+.my-box{
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 30px;
+}
